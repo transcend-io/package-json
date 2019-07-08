@@ -46,9 +46,9 @@ jobs:
         - pre-commit run --all-files
 
     # Run tests
-    # - stage: test
-    #   name: Tests
-    #   script: npm run test
+    - stage: test
+      name: Tests
+      script: npm run test
 
     # ###### #
     # Deploy #
