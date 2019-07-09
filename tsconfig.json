@@ -12,5 +12,8 @@
     "outDir": "./build",
     "types": ["node", "mocha", "chai"],
     "strict": true
-  }
+  },
+  "include": [
+    "src/**/*",
+  ],
 }
