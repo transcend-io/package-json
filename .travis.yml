@@ -42,6 +42,19 @@ jobs:
       name: Pre-Commits
       script:
         - pre-commit run --all-files
+
+    # Run tests
+    - stage: test
+      name: Tests
+      script: npm run test
+
+    # ###### #
+    # Deploy #
+    # ###### #
+
+    # Deploy to npm
+    - stage: deploy
+      script: skip
       deploy:
         - provider: npm
           email: "$NPM_EMAIL"
@@ -49,12 +62,6 @@ jobs:
           skip_cleanup: true
           on:
             branch: master
-
-
-    # Run tests
-    - stage: test
-      name: Tests
-      script: npm run test
 
 cache:
   directories:
