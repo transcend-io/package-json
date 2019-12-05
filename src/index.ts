@@ -24,7 +24,7 @@ import {
   RawPackageJson,
 } from './types';
 
-// Determine the paths of the codec that are invliad
+// Determine the paths of the codec that are invalid
 const getPaths = <A>(v: t.Validation<A>): string[] =>
   pipe(
     v,
