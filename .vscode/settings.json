@@ -5,6 +5,7 @@
         "optionalize",
         "pathlib",
         "pipeable",
-        "pyyaml"
+        "pyyaml",
+        "setuptools"
     ]
 }
